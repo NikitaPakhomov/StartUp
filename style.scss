@@ -5,19 +5,7 @@ body {
 a {
     text-decoration: none;
 }
-h2 {
-    font-size: 1.25rem;
-    margin-bottom: 6%;
-    position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        border-bottom: 2px solid #707070;
-        top: 50px;
-        left: 25%;
-    }
-}
+
 @mixin wrapper {
     max-width: 1600px;
     margin: 0 auto;
@@ -83,6 +71,7 @@ h2 {
     }
     h2 {
         font-size: 1.25rem;
+        color: white;
     }
 }
 
@@ -128,6 +117,20 @@ h2 {
     align-items: center;
     justify-content: space-between;
     color: #555555;
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 6%;
+        position: relative;
+        color: #555555;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            border-bottom: 2px solid #707070;
+            top: 50px;
+            left: 25%;
+        }
+    }
 
     span {
         margin-bottom: 6%;
@@ -182,6 +185,20 @@ h2 {
     align-items: center;
     justify-content: space-around;
     color: #555555;
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 6%;
+        position: relative;
+        color: #555555;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            border-bottom: 2px solid #707070;
+            top: 50px;
+            left: 25%;
+        }
+    }
 }
 .about-us__text {
 }
@@ -217,4 +234,60 @@ h2 {
 .about-us__left-btn {
 }
 .about-us__right-btn {
+}
+
+//-----------------LATEST-WORK------------------------
+.latest-work-wrapper {
+    @include wrapper();
+}
+.latest-work-container {
+    @include container();
+    display: flex;
+    min-height: 400px;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 6%;
+        position: relative;
+        color: #555555;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            border-bottom: 2px solid #707070;
+            top: 50px;
+            left: 53px;
+        }
+    }
+}
+.latest-work__filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 36%;
+    min-width: 300px;
+    a {
+        color: #555555;
+    }
+    a:active {
+        color: #c0301c;
+    }
+}
+.filter-item {
+}
+.latest-work__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+}
+.latest-work__item {
+}
+.latest-work__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
