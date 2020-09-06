@@ -381,11 +381,11 @@ a {
   min-width: 300px;
 }
 
-.latest-work__filter a {
+.latest-work__filter .latest-work__addres {
   color: #555555;
 }
 
-.latest-work__filter a:active {
+.latest-work__filter .latest-work__addres:active {
   color: #c0301c;
 }
 
@@ -403,5 +403,9 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.active {
+  color: #c0301c;
 }
 /*# sourceMappingURL=style.css.map */

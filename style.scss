@@ -271,13 +271,14 @@ a {
     justify-content: space-between;
     width: 36%;
     min-width: 300px;
-    a {
+    .latest-work__addres {
         color: #555555;
     }
-    a:active {
+    .latest-work__addres:active {
         color: #c0301c;
     }
 }
+
 .filter-item {
 }
 .latest-work__items {
@@ -292,4 +293,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.active {
+    color: #c0301c;
 }
