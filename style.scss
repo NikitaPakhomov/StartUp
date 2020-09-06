@@ -5,18 +5,39 @@ body {
 a {
     text-decoration: none;
 }
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 6%;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border-bottom: 2px solid #707070;
+        top: 50px;
+        left: 25%;
+    }
+}
+@mixin wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+@mixin container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 //---------HEADER---------
 
 .header-wrapper {
-    max-width: 1600px;
+    @include wrapper;
     min-height: 770px;
-    margin: 0 auto;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/header__back.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .header-container {
+    @include container;
     max-width: 1140px;
     margin: 0 auto;
     height: 100%;
@@ -57,6 +78,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
 }
 
 .header__btn {
@@ -88,31 +115,23 @@ a {
 
 //---------------SERVICES-------------
 .services-wrapper {
-    max-width: 1600px;
-    margin: 0 auto;
+    @include wrapper;
+    min-height: 500px;
+    background-color: white;
 }
 .services-container {
-    max-width: 1140px;
-    margin: 0 auto;
-    background-color: white;
+    @include container;
     display: flex;
+    min-height: 400px;
+    margin-top: 5%;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    h2 {
-        margin-bottom: 6%;
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            width: 50px;
-            border-bottom: 2px solid #707070;
-            top: 50px;
-            left: 35px;
-        }
-    }
+    justify-content: space-between;
+    color: #555555;
+
     span {
         margin-bottom: 6%;
+        font-size: 1rem;
     }
 }
 .service__items {
@@ -139,9 +158,62 @@ a {
 }
 .item__title {
     text-align: center;
+    font-size: 0.875rem;
 }
 .item__text {
     text-align: center;
     min-height: 82px;
     line-height: 24px;
+    font-size: 0.875rem;
+}
+
+//--------------ABOUT-US----------------
+.about-us-wrapper {
+    @include wrapper;
+    min-height: 500px;
+    background-color: white;
+}
+.about-us-container {
+    @include container;
+    display: flex;
+    min-height: 700px;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #555555;
+}
+.about-us__text {
+}
+.about-us__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-us__item {
+    flex-basis: 49%;
+    min-height: 133px;
+    text-align: left;
+}
+.about-us__team {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.about-us__person {
+}
+.about-us__img {
+    img {
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+.about-us__name {
+}
+.about-us__prof {
+}
+.about-us__left-btn {
+}
+.about-us__right-btn {
 }
