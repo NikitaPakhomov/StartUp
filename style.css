@@ -96,11 +96,13 @@ a {
 
 .header-middle h1 {
   font-size: 3rem;
+  text-align: center;
 }
 
 .header-middle h2 {
   font-size: 1.25rem;
   color: white;
+  text-align: center;
 }
 
 .header__btn {
