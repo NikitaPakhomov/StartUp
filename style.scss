@@ -271,10 +271,14 @@ a {
     justify-content: space-between;
     width: 36%;
     min-width: 300px;
+    margin-bottom: 2%;
     .latest-work__addres {
         color: #555555;
     }
     .latest-work__addres:active {
+        color: #c0301c;
+    }
+    .active {
         color: #c0301c;
     }
 }
@@ -294,6 +298,7 @@ a {
     height: 100%;
     object-fit: cover;
 }
-.active {
-    color: #c0301c;
+
+.NotFilter {
+    display: none;
 }

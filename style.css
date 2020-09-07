@@ -379,6 +379,7 @@ a {
           justify-content: space-between;
   width: 36%;
   min-width: 300px;
+  margin-bottom: 2%;
 }
 
 .latest-work__filter .latest-work__addres {
@@ -386,6 +387,10 @@ a {
 }
 
 .latest-work__filter .latest-work__addres:active {
+  color: #c0301c;
+}
+
+.latest-work__filter .active {
   color: #c0301c;
 }
 
@@ -405,7 +410,7 @@ a {
      object-fit: cover;
 }
 
-.active {
-  color: #c0301c;
+.NotFilter {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
