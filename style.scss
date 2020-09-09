@@ -470,7 +470,7 @@ a {
 }
 .brands__imgs {
     display: flex;
-    width: 130%;
+    width: 100%;
     max-width: 898px;
     justify-content: space-between;
     align-items: center;
@@ -487,15 +487,48 @@ a {
         margin-left: 0;
     }
 }
+.brands__quotes-cont {
+    width: 100%;
+    max-width: 790px;
+    position: relative;
+}
+.brands__button-lft {
+    position: absolute;
+    top: 10%;
+    left: -7%;
+}
+.brands__button {
+    position: absolute;
+    bottom: -80%;
+    right: 45%;
+    @media screen and (max-width: 687px) {
+        right: 42%;
+    }
+}
+.brands__button__a {
+    display: inline-block;
+    background-color: #dddddd;
+    width: 13px;
+    height: 13px;
+    border: 5px solid #dddddd;
+    border-radius: 50%;
+}
+.brands__button_red {
+    background-color: #c0301c;
+    border: 5px solid #c0301c;
+}
 .brands__quotes {
     max-width: 790px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 
     text-align: center;
 }
 .brands__quote {
     max-width: 790px;
+    flex: 0 0 100%;
+    transition: 1s;
 }
 .blocked {
     display: none;
