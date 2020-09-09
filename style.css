@@ -136,6 +136,8 @@ a {
   height: 100%;
   color: #ffffff;
   font-size: 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .header__btn .btm__a::after {
@@ -152,6 +154,11 @@ a {
   .header__btn .btm__a::after {
     height: 200%;
   }
+}
+
+.header__btn .btm__a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .services-wrapper {
@@ -515,6 +522,10 @@ a {
   border: 1px solid #707070;
 }
 
+.latest-work__btn:hover {
+  background: rgba(255, 255, 224, 0.8);
+}
+
 .latest-work__a {
   color: #c0301c;
 }
@@ -578,9 +589,16 @@ a {
   border: 1px solid white;
   top: -10.5px;
   left: -32.09px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.blod-wrapper {
+.do-you-like__btn a:hover::after {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.blog-wrapper {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
@@ -736,6 +754,25 @@ a {
 .blog__btn a {
   color: #c0301c;
   font-size: 0.8125rem;
+  position: relative;
+}
+
+.blog__btn a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid #c0301c;
+  bottom: -5px;
+  left: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blog__btn a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .brands-wrapper {
