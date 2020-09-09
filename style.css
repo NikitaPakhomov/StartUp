@@ -323,12 +323,38 @@ a {
       justify-content: space-around;
 }
 
-.about-us__img img {
+.about-us__img {
+  position: relative;
+}
+
+.about-us__img .about-us__imgItem {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+
+.about-us__img .about-us__info {
+  position: absolute;
+  width: 100%;
+  height: 98%;
+  background-color: rgba(85, 85, 85, 0.5);
+  top: 0;
+  visibility: hidden;
+}
+
+.about-us__img .about-us__info img {
+  width: 28px;
+  height: 28px;
+}
+
+.about-us__info:hover {
+  visibility: visible;
+}
+
+.about-us__img:hover .about-us__info {
+  visibility: visible;
 }
 
 .latest-work-wrapper {
