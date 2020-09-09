@@ -1,6 +1,7 @@
 let btns = document.querySelectorAll('.brands__button__a');
 let quotes = document.querySelectorAll('.brands__quote');
-
+let prevpos = 0;
+let cont = document.querySelector('.brands__quotes__container');
 
 function work(event, btn) {
     event.preventDefault();
@@ -13,6 +14,7 @@ function work(event, btn) {
     let pos = btn.dataset.pos;
 
     next(pos);
+
 }
 
 btns.forEach(function (btn) {
@@ -20,10 +22,7 @@ btns.forEach(function (btn) {
 });
 
 function next(number) {
-    console.log(number);
-    // quotes[0].style.transform = 'translateX(-1000px)';
-    // quotes[1].style.transform = 'translateX(-790px)';
-    quotes[0].offsetLeft = -790;
-    console.log(quotes[0].offsetLeft);
+    cont.style.transform = `translateX(${number * (-790)}px)`;
+    console.log('work');
 
 }

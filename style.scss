@@ -522,13 +522,17 @@ a {
     display: flex;
     align-items: center;
     overflow: hidden;
-
     text-align: center;
+}
+.brands__quotes__container {
+    min-width: 300%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
 }
 .brands__quote {
     max-width: 790px;
     flex: 0 0 100%;
-    transition: 1s;
 }
 .blocked {
     display: none;
