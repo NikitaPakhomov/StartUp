@@ -238,9 +238,21 @@ a {
         background-color: rgba(85, 85, 85, 0.5);
         top: 0;
         visibility: hidden;
-        img {
-            width: 28px;
-            height: 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding: 0 10% 5% 10%;
+
+        .about-us__soc {
+            width: 250%;
+            height: 250%;
+            box-sizing: border-box;
+            padding: 30%;
+            &:hover {
+                background-color: rgba(192, 48, 28, 0.8);
+            }
         }
     }
 }

@@ -342,11 +342,34 @@ a {
   background-color: rgba(85, 85, 85, 0.5);
   top: 0;
   visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10% 5% 10%;
 }
 
-.about-us__img .about-us__info img {
-  width: 28px;
-  height: 28px;
+.about-us__img .about-us__info .about-us__soc {
+  width: 250%;
+  height: 250%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30%;
+}
+
+.about-us__img .about-us__info .about-us__soc:hover {
+  background-color: rgba(192, 48, 28, 0.8);
 }
 
 .about-us__info:hover {
