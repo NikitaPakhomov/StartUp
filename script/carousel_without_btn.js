@@ -2,6 +2,7 @@ let btns = document.querySelectorAll('.brands__button__a');
 let quotes = document.querySelectorAll('.brands__quote');
 let prevpos = 0;
 let cont = document.querySelector('.brands__quotes__container');
+let widt = quotes[0].offsetWidth;
 
 function work(event, btn) {
     event.preventDefault();
@@ -22,7 +23,7 @@ btns.forEach(function (btn) {
 });
 
 function next(number) {
-    cont.style.transform = `translateX(${number * (-790)}px)`;
-    console.log('work');
+    cont.style.transform = `translateX(${number * (-widt)}px)`;
+    console.log(widt);
 
 }
