@@ -907,7 +907,7 @@ a {
 
 @media screen and (max-width: 570px) {
   .brands-wrapper {
-    min-height: 300px;
+    min-height: 400px;
     margin-top: 10px;
   }
 }
@@ -947,7 +947,7 @@ a {
 
 @media screen and (max-width: 600px) {
   .brands__imgs {
-    max-height: 500px;
+    max-height: 200px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

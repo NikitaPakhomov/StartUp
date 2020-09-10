@@ -623,7 +623,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     @media screen and(max-width:570px) {
-        min-height: 300px;
+        min-height: 400px;
         margin-top: 10px;
     }
 }
@@ -642,7 +642,7 @@ a {
     justify-content: space-between;
     align-items: center;
     @media screen and(max-width:600px) {
-        max-height: 500px;
+        max-height: 200px;
         flex-wrap: wrap;
     }
 }
