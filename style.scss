@@ -187,6 +187,9 @@ a {
             border-bottom: 2px solid #707070;
             top: 50px;
             left: 25%;
+            @media screen and (max-width: 600px) {
+                top: 30px;
+            }
         }
     }
 
@@ -261,6 +264,9 @@ a {
             border-bottom: 2px solid #707070;
             top: 50px;
             left: 25%;
+            @media screen and (max-width: 600px) {
+                top: 30px;
+            }
         }
     }
 }
@@ -361,6 +367,9 @@ a {
             border-bottom: 2px solid #707070;
             top: 50px;
             left: 53px;
+            @media screen and (max-width: 600px) {
+                top: 30px;
+            }
         }
     }
 }
@@ -499,6 +508,9 @@ a {
             border-bottom: 2px solid #707070;
             top: 50px;
             left: 82px;
+            @media screen and (max-width: 600px) {
+                top: 30px;
+            }
         }
     }
 }
@@ -769,6 +781,9 @@ input:-ms-input-placeholder {
             border-bottom: 2px solid #707070;
             top: 50px;
             left: 35%;
+            @media screen and (max-width: 600px) {
+                top: 30px;
+            }
         }
     }
 }
