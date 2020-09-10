@@ -946,6 +946,12 @@ a {
   }
 }
 
+@media screen and (max-width: 570px) {
+  .brands__button {
+    bottom: -50%;
+  }
+}
+
 .brands__button__a {
   display: inline-block;
   background-color: #dddddd;
@@ -1150,6 +1156,19 @@ input:-ms-input-placeholder {
   background: url("icons/map.svg") no-repeat;
 }
 
+@media screen and (max-width: 570px) {
+  .get__adr::before {
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .get__adr {
+    margin-bottom: 5px;
+    margin-left: 25px;
+  }
+}
+
 .get__adrtext {
   margin-top: 5%;
   font-size: 0.75rem;
@@ -1170,6 +1189,19 @@ input:-ms-input-placeholder {
   background: url("icons/mobile.svg");
 }
 
+@media screen and (max-width: 570px) {
+  .get__tel::before {
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .get__tel {
+    margin-bottom: 5px;
+    margin-left: 25px;
+  }
+}
+
 .get__teltext {
   font-size: 0.75rem;
   margin-top: 5%;
@@ -1188,6 +1220,19 @@ input:-ms-input-placeholder {
   left: -30px;
   content: "";
   background: url("icons/mail.svg");
+}
+
+@media screen and (max-width: 570px) {
+  .get__mail::before {
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .get__mail {
+    margin-bottom: 5px;
+    margin-left: 25px;
+  }
 }
 
 .get__mailtext {
@@ -1262,6 +1307,12 @@ input:-ms-input-placeholder {
   }
 }
 
+@media screen and (max-width: 570px) {
+  .get__input {
+    max-width: 40%;
+  }
+}
+
 .get__input:last-child {
   margin-right: 0;
 }
@@ -1274,6 +1325,13 @@ input:-ms-input-placeholder {
 @media screen and (max-width: 706px) {
   .get__text-area {
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .get__text-area {
+    max-width: 80%;
+    margin-left: -15%;
   }
 }
 
