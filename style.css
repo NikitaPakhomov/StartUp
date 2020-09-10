@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -37,14 +38,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .logo {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
   font-size: 1.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -52,8 +50,17 @@ a {
 }
 
 .navigation {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+@media screen and (max-width: 425px) {
+  .navigation {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
 }
 
 .navigation__list {
@@ -69,8 +76,21 @@ a {
   list-style: none;
 }
 
+@media screen and (max-width: 425px) {
+  .navigation__list {
+    padding-left: 2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navigation__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .naavigation__item {
-  margin-left: 5px;
+  margin-left: 2%;
   position: relative;
 }
 
@@ -130,6 +150,20 @@ a {
   position: relative;
 }
 
+@media screen and (max-width: 735px) {
+  .header__btn {
+    width: 30%;
+    height: 200%;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .header__btn {
+    width: 30%;
+    left: -30px;
+  }
+}
+
 .header__btn .btm__a {
   display: block;
   width: 100%;
@@ -138,6 +172,13 @@ a {
   font-size: 1rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  text-align: center;
+}
+
+@media screen and (max-width: 348px) {
+  .header__btn .btm__a {
+    width: 150%;
+  }
 }
 
 .header__btn .btm__a::after {
@@ -150,9 +191,10 @@ a {
   left: -3px;
 }
 
-@media screen and (max-width: 696px) {
+@media screen and (max-width: 348px) {
   .header__btn .btm__a::after {
-    height: 200%;
+    height: 300%;
+    width: 150%;
   }
 }
 
@@ -854,6 +896,13 @@ a {
   position: relative;
 }
 
+@media screen and (max-width: 788px) {
+  .brands__quotes-cont {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .brands__button-lft {
   position: absolute;
   top: 10%;
@@ -898,6 +947,12 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 788px) {
+  .brands__quotes {
+    min-width: 100%;
+  }
+}
+
 .brands__quotes__container {
   min-width: 300%;
   display: -webkit-box;
@@ -910,11 +965,23 @@ a {
   transition: 1s;
 }
 
+@media screen and (max-width: 788px) {
+  .brands__quotes__container {
+    min-width: 100%;
+  }
+}
+
 .brands__quote {
   max-width: 790px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+}
+
+@media screen and (max-width: 788px) {
+  .brands__quote {
+    max-width: 100%;
+  }
 }
 
 .blocked {
@@ -1164,6 +1231,12 @@ input:-ms-input-placeholder {
   margin-right: 7%;
 }
 
+@media screen and (max-width: 706px) {
+  .get__input {
+    margin-right: 1%;
+  }
+}
+
 .get__input:last-child {
   margin-right: 0;
 }
@@ -1171,6 +1244,12 @@ input:-ms-input-placeholder {
 .get__text-area {
   width: 98.7%;
   margin-bottom: 2.8%;
+}
+
+@media screen and (max-width: 706px) {
+  .get__text-area {
+    width: 95%;
+  }
 }
 
 .get__submit {
