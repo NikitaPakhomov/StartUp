@@ -211,6 +211,12 @@ a {
   background-color: white;
 }
 
+@media screen and (max-width: 570px) {
+  .services-wrapper {
+    min-height: 300px;
+  }
+}
+
 .services-container {
   width: 100%;
   max-width: 1140px;
@@ -317,6 +323,12 @@ a {
   background-color: #f8f8f8;
 }
 
+@media screen and (max-width: 570px) {
+  .about-us-wrapper {
+    min-height: 500px;
+  }
+}
+
 .about-us-container {
   width: 100%;
   max-width: 1140px;
@@ -336,6 +348,12 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: #555555;
+}
+
+@media screen and (max-width: 570px) {
+  .about-us-container {
+    min-height: 500px;
+  }
 }
 
 .about-us-container h2 {
@@ -843,6 +861,13 @@ a {
       justify-content: space-around;
 }
 
+@media screen and (max-width: 570px) {
+  .brands-wrapper {
+    min-height: 300px;
+    margin-top: 10px;
+  }
+}
+
 .brands-container {
   width: 100%;
   max-width: 1140px;
@@ -1291,6 +1316,12 @@ input:-ms-input-placeholder {
   margin-top: 8%;
 }
 
+@media screen and (max-width: 570px) {
+  .footer-wrapper {
+    min-height: 200px;
+  }
+}
+
 .footer-container {
   width: 100%;
   max-width: 1140px;
@@ -1309,6 +1340,12 @@ input:-ms-input-placeholder {
       -ms-flex-align: center;
           align-items: center;
   min-height: 150px;
+}
+
+@media screen and (max-width: 570px) {
+  .footer-container {
+    min-height: 100px;
+  }
 }
 
 .footer__socials {
