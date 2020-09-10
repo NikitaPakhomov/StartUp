@@ -945,6 +945,14 @@ a {
           align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .brands__imgs {
+    max-height: 500px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .brands__img img {
   -o-object-fit: cover;
      object-fit: cover;

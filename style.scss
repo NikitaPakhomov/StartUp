@@ -641,6 +641,10 @@ a {
     max-width: 898px;
     justify-content: space-between;
     align-items: center;
+    @media screen and(max-width:600px) {
+        max-height: 500px;
+        flex-wrap: wrap;
+    }
 }
 .brands__img {
     img {
