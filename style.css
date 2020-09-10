@@ -1325,7 +1325,7 @@ input:-ms-input-placeholder {
 }
 
 .name_mail {
-  width: 100%;
+  width: 99%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1348,7 +1348,7 @@ input:-ms-input-placeholder {
 }
 
 .subject {
-  width: 100%;
+  width: 99%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
