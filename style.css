@@ -1280,6 +1280,14 @@ input:-ms-input-placeholder {
   min-width: 60%;
 }
 
+@media screen and (max-width: 571px) {
+  .get__form {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .name_mail {
   width: 100%;
   display: -webkit-box;
@@ -1340,6 +1348,12 @@ input:-ms-input-placeholder {
   }
 }
 
+@media screen and (max-width: 570px) {
+  .get__input {
+    max-width: 49%;
+  }
+}
+
 .get__input:last-child {
   margin-right: 0;
 }
@@ -1358,7 +1372,6 @@ input:-ms-input-placeholder {
 @media screen and (max-width: 570px) {
   .get__text-area {
     max-width: 80%;
-    margin-left: -15%;
   }
 }
 

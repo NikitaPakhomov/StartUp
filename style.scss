@@ -873,6 +873,9 @@ input:-ms-input-placeholder {
     flex-wrap: nowrap;
     font-size: 0.75rem;
     min-width: 60%;
+    @media screen and(max-width:571px) {
+        align-items: baseline;
+    }
 }
 
 .name_mail {
@@ -907,7 +910,7 @@ input:-ms-input-placeholder {
         margin-right: 1%;
     }
     @media screen and(max-width:570px) {
-        // max-width: 50%;
+        max-width: 49%;
     }
     &:last-child {
         margin-right: 0;
@@ -921,7 +924,6 @@ input:-ms-input-placeholder {
     }
     @media screen and(max-width:570px) {
         max-width: 80%;
-        margin-left: -15%;
     }
 }
 .get__submit {
