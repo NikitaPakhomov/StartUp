@@ -1,3 +1,4 @@
+
 let btns = document.querySelectorAll('.brands__button__a');
 let quotes = document.querySelectorAll('.brands__quote');
 let cont = document.querySelector('.brands__quotes__container');
