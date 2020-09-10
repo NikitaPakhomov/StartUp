@@ -804,10 +804,18 @@ input:-ms-input-placeholder {
         @media screen and(max-width:570px) {
             left: -15px;
         }
+        @media screen and(max-width:314px) {
+            left: -10px;
+        }
     }
     @media screen and(max-width:570px) {
         margin-bottom: 5px;
         margin-left: 25px;
+    }
+}
+.get__adrtitle {
+    @media screen and(max-width:392px) {
+        text-align: center;
     }
 }
 .get__adrtext {
@@ -828,10 +836,18 @@ input:-ms-input-placeholder {
         @media screen and(max-width:570px) {
             left: -15px;
         }
+        @media screen and(max-width:314px) {
+            left: -10px;
+        }
     }
     @media screen and(max-width:570px) {
         margin-bottom: 5px;
         margin-left: 25px;
+    }
+}
+.get__teltitle {
+    @media screen and(max-width:392px) {
+        text-align: center;
     }
 }
 .get__teltext {
@@ -852,13 +868,20 @@ input:-ms-input-placeholder {
         @media screen and(max-width:570px) {
             left: -15px;
         }
+        @media screen and(max-width:314px) {
+            left: -10px;
+        }
     }
     @media screen and(max-width:570px) {
         margin-bottom: 5px;
         margin-left: 25px;
     }
 }
-
+.get__mailtitle {
+    @media screen and(max-width:392px) {
+        text-align: center;
+    }
+}
 .get__mailtext {
     font-size: 0.75rem;
     margin-top: 5%;

@@ -1182,10 +1182,22 @@ input:-ms-input-placeholder {
   }
 }
 
+@media screen and (max-width: 314px) {
+  .get__adr::before {
+    left: -10px;
+  }
+}
+
 @media screen and (max-width: 570px) {
   .get__adr {
     margin-bottom: 5px;
     margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .get__adrtitle {
+    text-align: center;
   }
 }
 
@@ -1215,10 +1227,22 @@ input:-ms-input-placeholder {
   }
 }
 
+@media screen and (max-width: 314px) {
+  .get__tel::before {
+    left: -10px;
+  }
+}
+
 @media screen and (max-width: 570px) {
   .get__tel {
     margin-bottom: 5px;
     margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .get__teltitle {
+    text-align: center;
   }
 }
 
@@ -1248,10 +1272,22 @@ input:-ms-input-placeholder {
   }
 }
 
+@media screen and (max-width: 314px) {
+  .get__mail::before {
+    left: -10px;
+  }
+}
+
 @media screen and (max-width: 570px) {
   .get__mail {
     margin-bottom: 5px;
     margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .get__mailtitle {
+    text-align: center;
   }
 }
 
